@@ -21,16 +21,19 @@
 	  <span class="subtitle">web developer | soprano | teacher</span></a>
 	</nav>
 
-	 <nav class="navbar navbar-expand-lg">
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+	  <!-- Toggler/collapsibe Button -->
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto">
+	  <!-- Navbar links -->
+	  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+	    <ul class="navbar-nav">
 	      <li class="nav-item">
-	        <a class="nav-link" href="#about">About Me</a>
-	      </li>
+		     <a class="nav-link" href="#about">About Me</a>
+		   </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="#experience">Experience</a>
 	      </li>
@@ -47,14 +50,29 @@
 	        <a class="nav-link" href="#contact">Contact</a>
 	      </li>
 	    </ul>
-
-	  </div>
+	  </div> 
 	</nav>
+
+	<div class="row">
+		<div class="col-md-8 offset-md-2">
+		<img src="assets/images/MenuGraphic.jpg" width="1200" height="851" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="Experience" title="Experience" href="#experience" coords="442,149,176,63" shape="rect">
+    <area target="" alt="Contact" title="Contact" href="#contact" coords="333,632,90,528" shape="rect">
+    <area target="" alt="Education" title="Education" href="#education" coords="471,720,726,796" shape="rect">
+    <area target="" alt="Skills" title="Skills" href="#skills" coords="689,657,836,712" shape="rect">
+    <area target="" alt="Projects" title="Projects" href="#projects" coords="942,695,1174,774" shape="rect">
+    <area target="" alt="About Me" title="About Me" href="#about" coords="510,115,731,210" shape="rect">
+</map>
+	</div>
+	</div>
 
     <div class="row">
     	<div class="col-md-12 row-light" id="about">
     		<div class="container">
     			<h1>About Me</h1>
+    			<h5>I love to build things.</h5>
     			<p>I am a software developer, musician, and teacher. I wrote my first computer program - a text based quiz in BASIC - when I was in junior high, but then turned my energies toward a performing career in music. All the while I kept coding on the side, building and maintaining websites for musical ensembles and small businesses. As a freelance soprano I've sung with ensembles across the US and been nominated for a Grammy award. This past summer I completed the intensive 8-week code immersion course at Tech Talent South, learning to make web apps with Ruby on Rails. I love designing and building apps, and I'm excited to apply my creativity and problem-solving skills to software development.<br>
     				<a href="https://www.linkedin.com/in/kathrynlmueller/" target="blank">Find me on LinkedIn</a>
 
@@ -329,6 +347,16 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascripts/imageMapResizer.min.js"></script>
+
+    <script type="text/javascript">   	
+    	$(document).ready(function() {
+    		$('map').imageMapResize();
+		});
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
